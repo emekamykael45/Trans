@@ -1,0 +1,153 @@
+@font-face{
+    font-family: 'CircularStd-Book';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/CircularStd-Book.woff") format("opentype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline:none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+button:focus,
+input:focus,
+input:active,
+textarea:focus,
+.form-control:focus {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border: 1px solid #6CB525 !important;
+}
+
+body {
+    font-family: "CircularStd-Book", Arial, sans-serif;
+    font-size: 1em;
+    background: #F3F9EC;
+    transition: .5s;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+.navbar .mr-auto .nav-item {
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.navbar .mr-auto .nav-item .nav-link {
+    letter-spacing: 0.02em;
+    color: #6CB525;
+    padding: 15px 25px;
+}
+
+.navbar .mr-auto .nav-item .nav-link:hover {
+    background: #6CB525;
+    color: #FFFFFF;
+    opacity: .6;
+}
+
+.navbar .mr-auto .nav-item .nav-link.active {
+    background: #6CB525;
+    color: #FFFFFF;
+}
+
+.navbar .mr-auto .nav-item .nav-link.active:hover {
+    background: #6CB525;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.navbar .mr-right .nav-item .dropdown .username {
+    color: #4B575C;
+    font-weight: 400;
+}
+
+.navbar .mr-right .nav-item .dropdown img {
+    width: 36px;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.navbar .mr-right .nav-item .dropdown i {
+    color: #CCCFD4;
+}
+
+.main {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 80%;
+}
+
+.main .head-text {
+    font-weight: 500;
+    font-size: 1.8em;
+    letter-spacing: 0.01em;
+    color: #4B575C;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.main .nav-tabs {
+    background: #FFFFFF;
+    border: 0.75px solid #E4E8E1;
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    border: none;
+}
+
+.main .nav-tabs .nav-link {
+    padding: 15px 20px;
+    padding-bottom: 13px;
+    margin: 0;
+    margin-right: 70px;
+    letter-spacing: 0.02em;
+    color: #4B575C;
+    border-radius: 0px;
+    border: none;
+}
+.main .nav-tabs .nav-link.last {
+    margin-right: 0;
+}
+
+.main .nav-tabs .nav-link:hover {
+    border-bottom: 2px solid #51940F;
+    color: #51940F;
+    opacity: .7;
+}
+
+.main .nav-tabs .nav-link.active {
+    border-bottom: 2px solid #51940F;
+    color: #51940F;
+}
+
+.main .nav-tabs .nav-link.active:hover {
+    opacity: 1;
+}
+
+
+
+/* Responsive Starts Here */
+
+@media screen and (max-width: 445px){
+    
+}
