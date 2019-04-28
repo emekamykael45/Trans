@@ -228,3 +228,13 @@ body {
 .main .footer .address{
     margin-bottom: 0px;
 }
+
+
+
+/* Responsive Starts Here */
+
+@media screen and (max-width: 600px){
+    .main{
+        width: 95%;
+    }
+}
