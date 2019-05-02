@@ -370,13 +370,11 @@ body {
 
 .main .table-responsive {
     width: 100%;
-    margin-bottom: 70px;
 }
 
 .main .table {
     background: #FFFFFF;
     border-radius: 5px;
-    width: 110%;
 }
 
 .main .users-table {
@@ -405,6 +403,11 @@ body {
     padding: 0 !important;
     margin-top: 0px;
     margin-left: -10px;
+}
+
+.inner{
+    display: block;
+    padding: 15px 30px;
 }
 
 .main .table tbody tr td.receiver-col {
@@ -473,76 +476,28 @@ body {
     background: rgba(255, 3, 3, 0.05);
 }
 
-.accordion-toggle:after{
-    position: absolute;
-    display: inline-block;
-    border-style: solid;
-    border-width: 0.2em 0.2em 0 0;
-    content: '';
-    height: 0.85em;
-    width: 0.85em;
-    right: 166px;
-    color: #555;
-    margin-top: 7px;
-    transform: rotate(-45deg);
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    transition: all .3s linear;
+.main .table tbody tr td img.location-img {
+    width: 35px;
+    height: 35px;
     cursor: pointer;
 }
-.accordion-toggle.collapsed:after{
-    margin-top: 0px;
-    transform: rotate(135deg);
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    transition: all .3s linear;
+
+.main .table-footer {
+    width: 100%;
 }
 
-
-.hiddenRow {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    background: #FAFBFC;
-    border: none !important;
+.main .table-footer nav {
+    margin-top: -30px;
 }
 
-.accordian-body{
-    background: #FAFBFC;
-    margin: 0px;
-    width: inherit !important;
+.main .table-footer .page-item .page-link {
+    color: #4B575C;
 }
 
-.accordian-body .drop-down-det{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.inner{
-    display: block;
-    padding: 15px 30px;
-}
-
-.inner.flex {
-    display: flex;
-    margin-top: 10px;
-}
-
-.inner.flex img {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
-}
-
-.inner.flexed {
-    display: flex;
-}
-
-.inner.flexed img {
-    width: 40px;
-    height: 40px;
-    margin-left: 15px;
-    margin-top: 10px;
+.main .table-footer .page-item.active .page-link {
+    color: #fff;
+    background-color: #51940F;
+    border-color: #E0E0E0;
 }
 
 
@@ -553,35 +508,11 @@ body {
     .main {
         width: 1800px;
     }
-
-    .accordion-toggle:after{
-        position: relative;
-        right: 20px;
-    }
-
-    .main #nav-first .table {
-        width: 100%;
-    }
-}
-
-@media (min-width: 1412px) and (max-width: 1899px){
-    .main #nav-first .table {
-        width: 100%;
-    }
-    
-    .accordion-toggle:after{
-        position: relative;
-        right: 10px;
-    }
 }
 
 @media screen and (max-width: 1240px){
     .main {
         width: 93%;
-    }
-
-    .accordion-toggle:after{
-        right: 70px;
     }
 }
 
@@ -613,21 +544,17 @@ body {
     .info-box .fig {
         margin-left: 20px;
     }
+}
 
-    .info-box .graph-info .left {
-        margin-right: 40px;
+@media screen and (max-width: 1030px){
+    .main .users-table {
+        width: 960px;
     }
 }
 
 @media screen and (max-width: 970px){
-    .main .users-table {
-        width: 900px;
-    }
-}
-
-@media screen and (max-width: 960px){
-    .main .request-table {
-        width: 1100px;
+    .main .table-footer {
+        margin-top: 5px;
     }
 }
 
@@ -644,13 +571,9 @@ body {
         grid-gap: 15px;
     }
 
-    .main .tab-content .info-box .info-tabs {
-        margin-bottom: 30px;
-    }
-
     .main .filter-row {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0px;
+        grid-row-gap: 15px;
     }
 }
 
@@ -658,36 +581,16 @@ body {
     .main .tab-content .info-boxes {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .info-box .graph-info .left {
-        margin-right: 100px;
-    }
-}
-
-@media screen and (max-width: 804px){
-    .tab-pane .tabs-div {
-        padding: 0;
-        margin: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 30px;
-    }
 }
 
 @media screen and (max-width: 750px){
     .main .filter-row {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0px;
+        grid-row-gap: 20px;
     }
 
     .main #nav-first .filter-row .right {
         margin-top: 15px;
-    }
-}
-
-@media screen and (max-width: 680px){
-    .accordion-toggle:after{
-        right: 50px;
     }
 }
 
@@ -740,9 +643,9 @@ body {
     }
 }
 
-@media screen and (max-width: 425px){
-    .accordion-toggle:after{
-        right: 30px;
+@media screen and (max-width: 450px){
+    .main .table-footer nav {
+        margin-top: 0px;
     }
 }
 
