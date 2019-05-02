@@ -26,6 +26,7 @@
         <!-- JS -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     </head>
 
     <body>
@@ -101,7 +102,7 @@
                                     <p><i class="fas fa-circle second"></i>2800 Completed Trips</p>
                                     <p><i class="fas fa-circle third"></i>200 Cancelled Trips</p>
                                 </div>
-                                <div class="graph">
+                                <div class="graph" id="chartTrips">
                                     
                                 </div>
                             </div>
@@ -118,7 +119,7 @@
                                     <p><i class="fas fa-circle first"></i>N10,000 Total Revenue</p>
                                     <p><i class="fas fa-circle second"></i>N1,000 Revenue Today</p>
                                 </div>
-                                <div class="graph">
+                                <div class="graph" id="chartRevenue">
                                     
                                 </div>
                             </div>
@@ -135,7 +136,7 @@
                                     <p><i class="fas fa-circle first"></i>3000 All Riders</p>
                                     <p><i class="fas fa-circle second"></i>2800 Active Riders</p>
                                 </div>
-                                <div class="graph">
+                                <div class="graph" id="chartRiders">
                                     
                                 </div>
                             </div>
@@ -152,7 +153,7 @@
                                     <p><i class="fas fa-circle first"></i>50 Total Staffs</p>
                                     <p><i class="fas fa-circle second"></i>20 Active Staffs</p>
                                 </div>
-                                <div class="graph">
+                                <div class="graph" id="chartStaffs">
                                     
                                 </div>
                             </div>
@@ -251,7 +252,153 @@
         </div>
 
 
+        <!-- Trips Graph-->
+        <script>
+            var colors = ['#0FB0F5', '#0DE43D', '#F23C3C'];
+            var options = {
+                chart: {
+                    type: 'donut',
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                series: [3000, 2800, 200],
+                labels: ['Total', 'Completed', 'Cancelled'],
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                        chart: {
+                            width: 200
+                        },
+                        legend: {
+                            show: false
+                        }
+                    }
+                }],
+                colors: colors,
+                legend: {
+                    show: false
+                }
+            }
 
+            var chart = new ApexCharts(
+                document.querySelector("#chartTrips"),
+                options
+            );
+
+            chart.render()
+        </script>
+
+        <!-- Revenue Graph-->
+        <script>
+            var colors = ['#0FB0F5', '#0DE43D'];
+            var options = {
+                chart: {
+                    type: 'donut',
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                series: [10000, 1000],
+                labels: ['Total', 'Today'],
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                        chart: {
+                            width: 200
+                        },
+                        legend: {
+                            show: false
+                        }
+                    }
+                }],
+                colors: colors,
+                legend: {
+                    show: false
+                }
+            }
+
+            var chart = new ApexCharts(
+                document.querySelector("#chartRevenue"),
+                options
+            );
+
+            chart.render()
+        </script>
+
+        <!-- Riders Graph-->
+        <script>
+            var colors = ['#0FB0F5', '#0DE43D'];
+            var options = {
+                chart: {
+                    type: 'donut',
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                series: [3000, 2800],
+                labels: ['All', 'Active'],
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                        chart: {
+                            width: 200
+                        },
+                        legend: {
+                            show: false
+                        }
+                    }
+                }],
+                colors: colors,
+                legend: {
+                    show: false
+                }
+            }
+
+            var chart = new ApexCharts(
+                document.querySelector("#chartRiders"),
+                options
+            );
+
+            chart.render()
+        </script>
+
+        <!-- Staffs Graph-->
+        <script>
+            var colors = ['#0FB0F5', '#0DE43D'];
+            var options = {
+                chart: {
+                    type: 'donut',
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                series: [50, 20],
+                labels: ['Total', 'Active'],
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                        chart: {
+                            width: 200
+                        },
+                        legend: {
+                            show: false
+                        }
+                    }
+                }],
+                colors: colors,
+                legend: {
+                    show: false
+                }
+            }
+
+            var chart = new ApexCharts(
+                document.querySelector("#chartStaffs"),
+                options
+            );
+
+            chart.render()
+        </script>
 
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
