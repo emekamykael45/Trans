@@ -351,7 +351,7 @@ body {
 
 .main .table-responsive {
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 5px;
 }
 
 .main .table {
@@ -549,6 +549,24 @@ body {
     margin-top: 10px;
 }
 
+.main .table-footer {
+    width: 100%;
+}
+
+.main .table-footer nav {
+    margin-top: -30px;
+}
+
+.main .table-footer .page-item .page-link {
+    color: #4B575C;
+}
+
+.main .table-footer .page-item.active .page-link {
+    color: #fff;
+    background-color: #51940F;
+    border-color: #E0E0E0;
+}
+
 
 
 /* Responsive Starts Here */
@@ -626,6 +644,10 @@ body {
 @media screen and (max-width: 970px){
     .main .users-table {
         width: 900px;
+    }
+
+    .main .table-footer {
+        margin-top: 5px;
     }
 }
 
@@ -741,6 +763,12 @@ body {
 @media screen and (max-width: 500px){
     .navbar {
         padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .main .table-footer nav {
+        margin-top: 0px;
     }
 }
 

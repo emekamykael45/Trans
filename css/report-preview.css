@@ -270,6 +270,24 @@ body {
     color: #fff;
 }
 
+.main .table-footer {
+    width: 100%;
+}
+
+.main .table-footer nav {
+    margin-top: -30px;
+}
+
+.main .table-footer .page-item .page-link {
+    color: #4B575C;
+}
+
+.main .table-footer .page-item.active .page-link {
+    color: #fff;
+    background-color: #51940F;
+    border-color: #E0E0E0;
+}
+
 
 
 
@@ -322,6 +340,12 @@ body {
 @media screen and (max-width: 980px){
     .main .filter-row .right .field {
         width: 110px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .main .table-footer {
+        margin-top: 5px;
     }
 }
 
@@ -387,5 +411,11 @@ body {
         margin-right: 0px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .main .table-footer nav {
+        margin-top: 0px;
     }
 }

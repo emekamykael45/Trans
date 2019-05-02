@@ -18,9 +18,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" />
 
-        <!-- Datatables CSS CDN -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"/>
-
         <!-- Font -->
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
@@ -433,6 +430,26 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="table-footer">
+                        <p>Showing <span>1</span> to <span>10</span> of <span>500</span> entries</p>
+
+                        <nav aria-label="...">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item" aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
 
                 </div>
                 <div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-two">
@@ -461,7 +478,7 @@
                     </div>
 
                     <div class="table-responsive">
-                        <table id="example" class="table users-table">
+                        <table class="table users-table">
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -513,6 +530,26 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="table-footer">
+                        <p>Showing <span>1</span> to <span>10</span> of <span>500</span> entries</p>
+
+                        <nav aria-label="...">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item" aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
 
                 </div>
                 <div class="tab-pane fade" id="nav-third" role="tabpanel" aria-labelledby="nav-three">
@@ -541,7 +578,7 @@
                     </div>
 
                     <div class="table-responsive">
-                        <table id="example" class="table users-table">
+                        <table class="table users-table">
                             <thead>
                                 <tr>
                                     <th>Rider</th>
@@ -620,6 +657,26 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="table-footer">
+                        <p>Showing <span>1</span> to <span>10</span> of <span>500</span> entries</p>
+
+                        <nav aria-label="...">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item" aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
 
                 </div>
             </div>
@@ -649,18 +706,6 @@
                 type: 'date',
                 startCalendar: $('#rangestart')
             });
-        </script>
-
-        <!--Datatable-->
-        <script>
-            $(document).ready(function() {
-                $('#example').DataTable( {
-                    "ordering": false,
-                    "bPaginate": true,
-                    "bLengthChange": false,
-                    "bFilter": false
-                } );
-            } );
         </script>
 
         <script>
