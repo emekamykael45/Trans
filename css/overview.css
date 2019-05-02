@@ -50,13 +50,61 @@ body {
 .navbar .mx-auto .nav-item {
     padding: 0;
     margin: 0;
-    margin-right: 15px;
+    margin-right: 5px;
+    margin-bottom: -1px;
 }
 
 .navbar .mx-auto .nav-item .nav-link {
     letter-spacing: 0.02em;
     color: #6CB525;
     padding: 15px 25px;
+}
+
+.navbar .mx-auto .nav-item .nav-link img {
+    width: 18px;
+    height: 18px;
+    margin-top: -3px;
+    margin-right: 8px;
+}
+
+.navbar .mx-auto .nav-item .nav-link.active.overview img {
+    content: url('../images/over-icon-whi.png');
+}
+
+.navbar .mx-auto .nav-item .nav-link.reports img {
+    content: url('../images/repo-icon-gre.png');
+}
+.navbar .mx-auto .nav-item .nav-link.reports:hover img {
+    content: url('../images/repo-icon-whi.png');
+}
+
+.navbar .mx-auto .nav-item .nav-link.riders img {
+    content: url('../images/ride-icon-gre.png');
+    margin-top: -1px;
+}
+.navbar .mx-auto .nav-item .nav-link.riders:hover img {
+    content: url('../images/ride-icon-whi.png');
+}
+
+.navbar .mx-auto .nav-item .nav-link.users img {
+    content: url('../images/user-icon-gre.png');
+}
+.navbar .mx-auto .nav-item .nav-link.users:hover img {
+    content: url('../images/user-icon-whi.png');
+}
+
+.navbar .mx-auto .nav-item .nav-link.tracker img {
+    content: url('../images/trac-icon-gre.png');
+}
+.navbar .mx-auto .nav-item .nav-link.tracker:hover img {
+    content: url('../images/trac-icon-whi.png');
+}
+
+.navbar .mx-auto .nav-item .nav-link.crm img {
+    content: url('../images/crm-icon-gre.png');
+}
+.navbar .mx-auto .nav-item .nav-link.crm:hover img {
+    content: url('../images/crm-icon-whi.png');
 }
 
 .navbar .mx-auto .nav-item .nav-link:hover {
@@ -346,6 +394,26 @@ body {
     }
 }
 
+@media screen and (max-width: 1199px){
+    .navbar {
+        padding: 10px 40px;
+    }
+
+    .navbar-toggler span img {
+        width: 30px;
+        margin-top: -3px;
+    }
+
+    .navbar .mr-right .dropdown {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .navbar .mr-right .dropdown-menu {
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 1080px){
     .info-box .title {
         margin-left: 20px;
@@ -357,20 +425,6 @@ body {
 
     .info-box .graph-info .left {
         margin-right: 40px;
-    }
-}
-
-@media screen and (max-width: 991px){
-    .navbar-toggler span {
-        color: #000;
-    }
-
-    .navbar .mr-right .dropdown {
-        margin-bottom: 15px;
-    }
-
-    .navbar .mr-right .dropdown-menu {
-        width: 200px;
     }
 }
 
@@ -429,7 +483,7 @@ body {
 
 @media screen and (max-width: 500px){
     .navbar {
-        padding: 0 15px;
+        padding: 10px 10px;
     }
 }
 
